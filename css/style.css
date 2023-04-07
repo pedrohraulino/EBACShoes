@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    color: #062A3B;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    background-color: #FDFDFD;
+    height: 100%;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.3);
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.gridHeader {
+    display: grid;
+    grid-template-columns: 10% 50% 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    background-color: #EAECED;
+    padding: 0 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.buscar input {
+    background-color: transparent;
+    border: none;
+    height: 46px;
+    width: 100%;
+    padding: 16px;
+    outline: none;
+}
+
+.acesso img {
+    margin-left: 8px;
+}
+
+.acesso {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    width: 1116px;
+    margin: 0 auto;
+    padding-top: 32px
+}
+
+li {
+    list-style: none;
+    padding: 8px 0;
+    background-color: #fff;
+}
+
+ul>li {
+    position: relative;
+    padding: 0 32px;
+}
+
+.submenu li {
+    padding: 32px;
+    position: relative;
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 8px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    transition: max-height 0.3s ease-in;
+}
+
+ul>li:hover .submenu {
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu li:hover {
+    background-color: #EAECED;
+}
+
+#carrossel img {
+    width: 100%;
+}
+
+#lancamento>div {
+    display: flex;
+    flex-direction: row
+}
+
+.infos,
+.infosOferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+}
+
+.infos p {
+    font-size: 18px;
+}
+
+.gridOfertas img {
+    max-width: 100%;
+}
+
+.gridOfertas>div {
+    border-radius: 8px;
+    transition: ease-in-out 400ms;
+}
+
+.gridOfertas button {
+    max-width: 100%;
+}
+
+.gridOfertas {
+    display: grid;
+    column-gap: 2%;
+    row-gap: 2%;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+.infos-Oferta {
+    height: 200px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infos-Oferta h3 {
+    font-size: 24px;
+}
+
+.precoOferta>div {
+    display: flex;
+    align-items: baseline;
+}
+
+.precoOferta p {
+    font-size: 20px;
+}
+
+.precoOferta div p {
+    margin-top: 8px;
+}
+
+.precoOferta span {
+    font-size: 24px;
+    text-decoration: line-through;
+}
+
+.precoOferta strong {
+    color: #2CB859;
+}
+
+strong {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+button {
+    width: 356px;
+    padding: 16px 8px;
+    font-size: 15px;
+    color: #FDFDFD;
+    background-color: #1178A8;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: ease-in-out 400ms;
+}
+
+button:hover {
+    background-color: #062A3B;
+}
+
+.radio-quadrado {
+    display: inline-block;
+}
+
+section input[type="radio"] {
+    display: none;
+}
+
+section label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #062A3B;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+section input[type="radio"]:checked+label {
+    background-color: #1178A8;
+    color: #fff;
+}
