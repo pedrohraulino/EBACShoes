@@ -82,6 +82,7 @@
         list-style: none;
         padding: 8px 0;
         background-color: #fff;
+        width: 300px
     }
     
     ul>li {
@@ -196,7 +197,7 @@
     }
     
     button {
-        width: 356px;
+        width: 100%;
         padding: 16px 8px;
         font-size: 15px;
         color: #FDFDFD;
@@ -275,4 +276,18 @@
     
     .btnCarrinho:hover img {
         display: none;
+    }
+    
+    footer {
+        margin-top: 32px;
+        background-color: #062A3B;
+    }
+    
+    footer li {
+        background-color: transparent;
+    }
+    
+    footer a,
+    h5 {
+        color: #EAECED;
     }
